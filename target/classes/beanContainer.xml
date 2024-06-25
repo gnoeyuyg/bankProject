@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans 
+			http://www.springframework.org/schema/beans/spring-beans.xsd ">
+	
+	<!-- kr.ac.kopo.basic.Hello hello = new kr.ac.kopo.basic.Hello()  -->
+	<bean class="kr.ac.kopo.basic.Hello" id="hello" />
+	<bean class="kr.ac.kopo.basic.Hello" id="hello2" />
+	<bean class="kr.ac.kopo.basic.Hello" id="hello3" />
+	
+</beans>

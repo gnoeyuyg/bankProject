@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+		xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+		xsi:schemaLocation="http://www.springframework.org/schema/beans 
+			http://www.springframework.org/schema/beans/spring-beans.xsd ">
+
+	<bean class="kr.ac.kopo.di.xml.HankookTire"
+		 id="hankook" />
+	<bean class="kr.ac.kopo.di.xml.KumhoTire"
+		id="kumho" />	
+	<bean class="kr.ac.kopo.di.xml.Car" id="car">
+		<constructor-arg ref="hankook" />
+	</bean>	
+	<bean class="kr.ac.kopo.di.xml.Car" id="car2">
+		<property name="tire" ref="kumho" />
+	</bean> 
+
+</beans>
